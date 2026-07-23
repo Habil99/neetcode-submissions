@@ -8,10 +8,10 @@ class Solution {
         const map: Record<number, number> = {};
 
         for (let i = 0; i < nums.length; i++) {
-            const compliment = target - nums[i];
+            const complement = target - nums[i];
 
-            if (map[compliment] !== undefined) {
-                return [map[compliment], i];
+            if (map[complement] !== undefined) {
+                return [map[complement], i];
             }
 
             map[nums[i]] = i;
